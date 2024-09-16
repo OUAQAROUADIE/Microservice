@@ -35,16 +35,16 @@ public class AccountServiceApplication {
 								.type(AccountType.CURRENT_ACCOUNT)
 								.customerId(c.getId())
 								.build();
-				BankAccount bankAccount2 = BankAccount.builder()
-						.accountId(UUID.randomUUID().toString())
-						.currency("MAD")
-						.balance(Math.random()*25874)
-						.cteateAt(LocalDate.now())
-						.type(AccountType.CURRENT_ACCOUNT)
-						.customerId(c.getId())
-						.build();
-				accountRepository.save(bankAccount1);
-				accountRepository.save(bankAccount2);
+						BankAccount bankAccount2 = BankAccount.builder()
+								.accountId(UUID.randomUUID().toString())
+								.currency("MAD")
+								.balance(Math.random()*25874)
+								.cteateAt(LocalDate.now())
+								.type(AccountType.CURRENT_ACCOUNT)
+								.customerId(c.getId())
+								.build();
+						accountRepository.save(bankAccount1);
+						accountRepository.save(bankAccount2);
 			});
 
 
